@@ -44,6 +44,20 @@ body {
     font-size: 1rem;
 }
 
+/* nav */
+
+.navbar{
+    background-color: blanchedalmond;
+}
+.navbar i{
+    font-size: 2.8rem;
+}
+
+.nav-link{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
 
 /* media */
 
@@ -60,10 +74,22 @@ body {
     .header .welcome-text{
         font-size: 1.5rem;
     }
+    .navbar i{
+        font-size: 3rem;
+    }
+    .navbar button{
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width:1200px){
     .header{
         background-size: 60%;
     }
+    .navbar i{
+        font-size: 3.5rem;
+    }
+    .nav-link{
+        font-size: 1.4rem;
+    } 
 }
