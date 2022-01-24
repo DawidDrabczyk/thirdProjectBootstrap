@@ -2,58 +2,127 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sedgwick+Ave&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sedgwick+Ave&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/0320d2c7f9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header class="header" id="header">
+  <header class="header" id="header">
 
     <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
-        <h1>Buldramik</h1>
-        <div class="welcome-text">Witamy w hodowli psów rasowych buldoga francuskiego.</div>
-        <div class="hero-shadow"></div>
+      <h1>Buldramik</h1>
+      <div class="welcome-text">Witamy na stronie internetowej hodowli psów rasowych buldoga francuskiego.</div>
+      <div class="hero-shadow"></div>
     </div>
-    
-    </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#"><i class="ti ti-dog-bowl"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active" href="#">Strona główna</a>
-              <a class="nav-link" href="#aboutus">O nas</a>
-              <a class="nav-link" href="#gallery">Galeria</a>
-              <a class="nav-link" href="#contact">Kontakt</a>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-paw"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="#">Strona główna</a>
+          <a class="nav-link" href="#aboutus">O nas</a>
+          <a class="nav-link" href="#gallery">Galeria</a>
+          <a class="nav-link" href="#contact">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="aboutus-top-section d-flex justify-content-center align-items-center text-center" id="aboutus">
+    <div class="container py-3 aboutus-container">
+      
+      <div class="row m-0">
+        
+        <div class="col-md-6 aboutus-top">
+          <h2 class="display-1 text-uppercase fw-bold">o nas</h2>
+          <div class="aboutus-img"></div>
+        </div>
+        
+        <div class="col-md-6 py-5 aboutus-right">
+          <div class="aboutus-text-top">Jesteśmy hodowlą działającą na rynku od 2021 roku zrzeszoną w związku hodowców
+            psów rasowych. Specjalizujemy się w hodowli buldoga francuskiego, bardzo popularnej rasy psów małych.</div>
+
+          <div class="container aboutus-bottom">
+            
+            <div class="row m-0 d-flex justify-content-center align-items-center">
+              <div class="col-md-8">
+                <div class="aboutus-text-bottom">W razie pytań serdecznie zapraszamy do kontaktu.
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <button class="btn btn-secondary">kontakt</button>
+              </div>
+            
             </div>
           </div>
+
         </div>
-      </nav>
+      </div>
+    
+    </div>
+   </section>
+
+   <section class="aboutus-bottom-section">
+     <div class="container">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/carousel_one_640.jpg" class="d-block w-100 d-lg-none" alt="Jasno umaszczony i radosny buldog w czerwonej obroży">
+            <img src="./img/carousel_one_1920.jpg" class="d-block w-100 d-none d-lg-block" alt="Jasno umaszczony i radosny buldog w czerwonej obroży">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carousel_two_640.jpg" class="d-block w-100 d-lg-none" alt="Dwa czarne oraz śpiące buldogi w białej scenerii">
+            <img src="./img/carousel_two_1920.jpg" class="d-block w-100 d-none d-lg-block" alt="Dwa czarne oraz śpiące buldogi w białej scenerii">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carousel_three_640.jpg" class="d-block w-100 d-lg-none" alt="Jasno brązowy buldog patrzący w obiektyw z nadstawionymi uszami">
+            <img src="./img/carousel_three_1920.jpg" class="d-block w-100 d-none d-lg-block" alt="Jasno brązowy buldog patrzący w obiektyw z nadstawionymi uszami">
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden ">Next</span>
+        </button>
+      </div>
+
+     </div>
+   </section>
 
 
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
