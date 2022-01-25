@@ -4,8 +4,8 @@
 	margin: 0;
 }
 
-html{
-    height: 2000px
+html {
+	height: 2000px;
 }
 
 body {
@@ -37,9 +37,9 @@ body {
 .header h1 {
 	font-family: "Sedgwick Ave", cursive;
 	font-weight: bold;
+	font-size: 2rem;
 	text-transform: uppercase;
 	text-shadow: 0px 2px 5px black;
-	font-size: 2rem;
 	letter-spacing: 10px;
 }
 
@@ -63,6 +63,10 @@ body {
 
 /* aboutus */
 
+.aboutus-top-section,
+.aboutus-bottom-section {
+	background-color: grey;
+}
 .aboutus-top {
 	height: 25rem;
 }
@@ -74,7 +78,7 @@ body {
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-    border-radius: 15px;
+	border-radius: 15px;
 }
 
 .aboutus-text-top {
@@ -100,20 +104,77 @@ body {
 	border-bottom-right-radius: 25px;
 }
 
-.aboutus-top-section h2{
-    margin-top: 15px;
-    font-family: "Sedgwick Ave", cursive;
-    letter-spacing: 20px;
+.aboutus-top-section h2 {
+	margin-top: 15px;
+	font-family: "Sedgwick Ave", cursive;
+	letter-spacing: 20px;
+	text-shadow: 0px 0px 5px black;
 }
 
-.carousel-inner img{
-    height: 16rem;
-    width: auto;
-    object-fit: cover;
+.carousel-inner img {
+	height: 16rem;
+	width: auto;
+	object-fit: contain;
 }
 
+/* gallery */
+
+.gallery h2 {
+	font-size: 2rem;
+	font-family: "Sedgwick Ave", cursive;
+	letter-spacing: 20px;
+	text-shadow: 0px 0px 5px blanchedalmond;
+}
+.card {
+	margin: 30px;
+	height: 385px;
+	box-shadow: 0px 0px 10px black;
+	
+	overflow: hidden;
+}
+.card img{
+	width: auto;
+	height: 250px;
+	transition: transform 0.5s;
+}
+.card img:hover{
+	transform: scale(1.1);
+}
+.card-text {
+	font-size: 0.7rem;
+}
+
+.card-footer {
+	font-family: "Sedgwick Ave", cursive;
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-shadow: 0px 0px 1px black;
+	text-transform: uppercase;
+}
 
 /* media */
+
+@media (min-width:400px) {
+	.card{
+		height: 460px;
+	}
+	.card-text{
+		font-size: 0.8rem;
+	}
+}
+@media (min-width:500px) {
+	.gallery h2{
+		font-size: 3rem;
+	}
+	.card{
+		height: 520px;
+		width: auto;
+	}
+	.card img{
+		height: 350px;
+	}
+}
 
 @media (min-width: 768px) {
 	.header {
@@ -136,15 +197,31 @@ body {
 	.aboutus-bottom {
 		margin-top: 20px;
 	}
-    .carousel-inner img{
-        height: 25rem;
-    }
+	.carousel-inner img {
+		height: 25rem;
+	}
+	.gallery h2{
+		margin-top: 25px;
+		font-size: 4rem;
+	}
+	.card{
+		height: 450px;
+	}
+	.card img{
+		height: 230px;
+	}
+	.card-title{
+		font-size: 1.5rem;
+	}
+	.card-text{
+		font-size: 1rem;
+	}
 }
 
 @media (min-width: 992px) {
-    .header{
-        background-image: url("../img/header_img_1920.jpg");
-    }
+	.header {
+		background-image: url("../img/header_img_1920.jpg");
+	}
 	.aboutus-bottom {
 		margin-top: 70px;
 	}
@@ -154,18 +231,21 @@ body {
 	.aboutus-container {
 		position: relative;
 	}
-    .aboutus-img{
-        background-image: url("../img/aboutus_main_1920.jpg");
-    }
+	.aboutus-img {
+		background-image: url("../img/aboutus_main_1920.jpg");
+	}
 	.aboutus-right {
 		position: absolute;
 		left: 50%;
 		top: 20%;
 	}
-    .carousel-inner img{
-        margin-top: 150px;
-        height: 35rem;
-    }
+	.carousel-inner img {
+		margin-top: 150px;
+		height: 35rem;
+	}
+	.card{
+		height: 500px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -179,10 +259,23 @@ body {
 		margin-left: 2.1rem;
 		font-size: 1.4rem;
 	}
+	.card{
+		height: 450px;
+	}
 }
 
-@media (min-width:1400px){
-    .carousel-inner img{
-        height: 40rem;
-    }
+@media (min-width: 1400px) {
+	.carousel-inner img {
+		height: 30rem;
+		object-fit: contain;
+	}
+	.gallery h2{
+		font-size: 5rem;
+	}
+	.card{
+		height: 500px;
+	}
+	.card img{
+		height: 280px;
+	}
 }
