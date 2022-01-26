@@ -98,7 +98,7 @@ body {
 }
 
 .aboutus-top-section .btn {
-	padding: 10px 20px;
+	padding: 10px 30px;
 	font-weight: bold;
 	font-size: 1.2rem;
 	color: white;
@@ -237,6 +237,27 @@ body {
 	color: black;
 }
 
+/* footer */
+
+.footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+.footer-text{
+	font-family: "Sedgwick Ave", cursive;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-shadow: 0px 0px 1px black;
+	text-transform: uppercase;
+}
+.copy{
+	font-size: 1.3rem;
+	margin-right: 15px;
+}
+
 /* media */
 
 @media (min-width:400px) {
@@ -360,6 +381,15 @@ body {
 	}
 	.contact .form-control{
 		width: 700px;
+	}
+	.footer{
+		padding: 15px;
+	}
+	.footer .copy{
+		font-size: 2rem;
+	}
+	.footer-text{
+		font-size: 1.2rem;
 	}
 }
 
