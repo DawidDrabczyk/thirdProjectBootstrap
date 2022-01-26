@@ -67,6 +67,10 @@ body {
 .aboutus-bottom-section {
 	background-color: grey;
 }
+
+.aboutus-bottom-section{
+	border-bottom: 5px solid black;
+}
 .aboutus-top {
 	height: 25rem;
 }
@@ -84,11 +88,13 @@ body {
 .aboutus-text-top {
 	margin-top: 60px;
 	font-size: 1.4rem;
+	text-shadow: 0px 2px 5px black;
 }
 
 .aboutus-text-bottom {
 	margin: 25px;
 	font-size: 1rem;
+	text-shadow: 0px 2px 5px black;
 }
 
 .aboutus-top-section .btn {
@@ -118,6 +124,11 @@ body {
 }
 
 /* gallery */
+
+.gallery{
+	border-bottom: 5px solid black;
+	box-shadow: 0px 5px 20px blanchedalmond;
+}
 
 .gallery h2 {
 	font-size: 2rem;
@@ -153,6 +164,79 @@ body {
 	text-transform: uppercase;
 }
 
+/* contact */
+
+.contact{
+	background-color: grey;
+}
+
+.contact h2{
+	margin-bottom: 30px;
+	font-size: 2rem;
+	font-family: "Sedgwick Ave", cursive;
+	letter-spacing: 20px;
+	text-shadow: 0px 2px 5px black;
+	color: white;
+}
+
+.contact h4{
+	margin-bottom: 20px;
+	font-size: 1.7rem;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 5px black;
+}
+
+.contact p{
+	margin-bottom: 20px;
+	font-size: 1rem;
+	color: white;
+	text-shadow: 0px 2px 5px black;
+}
+
+.contact .form{
+	margin-top: 20px;
+}
+
+.contact-text{
+	margin-bottom: 30px;
+	font-size: 1rem;
+	color: white;
+	text-shadow: 0px 2px 5px black;
+}
+
+.contact label{
+	margin-bottom: 5px;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 2px 5px black;
+}
+
+.contact input, .contact textarea, .contact select{
+	border: 1px solid black;
+}
+
+.contact form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact .btn-send{
+	padding: 10px 20px;
+	margin-top: 20px;
+	color: white;
+	text-shadow: 0px 2px 5px black;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.contact .btn-send:hover{
+	background-color: white;
+	color: black;
+}
+
 /* media */
 
 @media (min-width:400px) {
@@ -164,7 +248,7 @@ body {
 	}
 }
 @media (min-width:500px) {
-	.gallery h2{
+	.gallery h2, .contact h2{
 		font-size: 3rem;
 	}
 	.card{
@@ -173,6 +257,13 @@ body {
 	}
 	.card img{
 		height: 350px;
+	}
+	.contact .form-control{
+		width: 400px;
+		height: 40px;
+	}
+	.contact .textarea-form{
+		height: 200px;
 	}
 }
 
@@ -200,7 +291,7 @@ body {
 	.carousel-inner img {
 		height: 25rem;
 	}
-	.gallery h2{
+	.gallery h2, .contact h2{
 		margin-top: 25px;
 		font-size: 4rem;
 	}
@@ -215,6 +306,18 @@ body {
 	}
 	.card-text{
 		font-size: 1rem;
+	}
+	.contact label{
+		font-size: 1rem;
+	}
+	.contact h4{
+		font-size: 2.3rem;
+	}
+	.contact p{
+		font-size: 1.3rem;
+	}
+	.contact .form-control{
+		width: 500px;
 	}
 }
 
@@ -246,6 +349,18 @@ body {
 	.card{
 		height: 500px;
 	}
+	.contact-text{
+		font-size: 1.2rem;
+	}
+	.contact label{
+		font-size: 1.4rem;
+	}
+	.contact-text{
+		font-size: 1.5rem;
+	}
+	.contact .form-control{
+		width: 700px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -269,7 +384,7 @@ body {
 		height: 30rem;
 		object-fit: contain;
 	}
-	.gallery h2{
+	.gallery h2, .contact h2{
 		font-size: 5rem;
 	}
 	.card{
